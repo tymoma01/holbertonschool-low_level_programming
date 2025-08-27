@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * Main function to identify positive, negative or nul for random number
+ * Main function to print the alphabet
  * Return: Always 0 (Success)
 **/
 int main(void)
