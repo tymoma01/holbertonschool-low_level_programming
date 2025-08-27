@@ -1,22 +1,23 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
- * Main function to print the alphabet
+ * main - Prints all possible combinations of single-digit numbers
+ *
  * Return: Always 0 (Success)
-**/
+ */
 int main(void)
 {
-int a;
-for (a = 0; a<=9; a++)
-{
-    putchar(a + '0');
-    if (a < 9) {
-        putchar(' ');
-        putchar(',');
-    }
-}
-putchar('\n');
-return (0);
+	int n;
+
+	for (n = 0; n <= 9; n++)
+	{
+		putchar(n + '0');
+		if (n < 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+	return (0);
 }
