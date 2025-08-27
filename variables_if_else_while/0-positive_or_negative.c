@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 
-/* 
-Main function to identify positive, negative or nul for random number
-*/
+/**
+ * Main function to identify positive, negative or nul for random number
+**/
 int main(void)
 {
 int n;
