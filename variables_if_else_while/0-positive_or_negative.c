@@ -2,7 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
+/* 
+Main function to identify positive, negative or nul for random number
+*/
 int main(void)
 {
 int n;
