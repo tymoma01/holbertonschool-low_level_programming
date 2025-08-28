@@ -3,5 +3,5 @@
 
 int _isupper(char c)
 {
-    return isupper(c);
+    return (int)isupper(c);
 }
