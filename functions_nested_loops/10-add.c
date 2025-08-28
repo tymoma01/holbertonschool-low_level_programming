@@ -6,7 +6,7 @@
  *
  * Return: Always 0 (Success)
  */
-int add(int n , int m )
+int add(int n, int m)
 {
-	return n + m;
+	return (n + m);
 }
