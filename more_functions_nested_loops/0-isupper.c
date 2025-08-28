@@ -3,5 +3,10 @@
 
 int _isupper(char c)
 {
-    return (int)isupper(c);
+    if (c >= 'A' && c <= 'Z'){
+        return(1);
+    }
+    else {
+        return(0);
+    }
 }
