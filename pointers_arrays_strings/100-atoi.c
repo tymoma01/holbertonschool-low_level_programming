@@ -1,0 +1,25 @@
+#include "main.h"
+#include <stdio.h>
+
+int _atoi(char *s)
+{
+    int i = 0;
+    int sign = 1;
+    int isdigit = 0;
+    int number = 0;
+
+    while (s[i] != '\0'){
+        if (s[i] == '-'){
+            sign *= -1;
+        }
+        else if (s[i] >= '0' && s[i] <= '9'){
+            isdigit = 1;
+            number = number * 10 + (s[i] - '0');
+        }
+        else if (isdigit){
+            break;
+        }
+        i++;
+    }
+    return (sign * number);
+}
