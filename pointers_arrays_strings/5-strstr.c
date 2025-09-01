@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 char *_strstr(char *haystack, char *needle){
-    int i, j = 1;
+    int i, j;
 
     for (i = 0; haystack[i] != '\0'; i++){
+        j = 1;
         if (haystack[i] == needle[0]){
             while (needle[j] == haystack[i+j] && needle[j] != '\0'){
                 j++;
