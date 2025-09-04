@@ -12,10 +12,13 @@ char *_strdup(char *str){
         len++;
     }
 
-    res = malloc(len * sizeof(char));
-    
+    res = malloc((len + 1) * sizeof(char));
+    if (!res){
+        return (NULL);
+    }
     for (i = 0; i < len; i++){
         res[i] = str[i];
     }
+    res[len] = '\0';
     return (res);
 }
